@@ -20,7 +20,6 @@
     background-color: whitesmoke;
     margin: auto;
     margin-top: 30px;
-    word-wrap: break-word;
 }
 
 h3 {
@@ -41,6 +40,7 @@ li {
     border: 1px solid rgb(149, 241, 209);
     padding: 10px;
     background-color: rgb(214, 245, 234);
+    word-wrap: break-word;
 }
 
 span {
@@ -70,6 +70,7 @@ button {
 
 .trash {
     color: rgb(179, 245, 222);
+    float: left;
 }
 
 .trash :hover {
@@ -80,4 +81,9 @@ button {
 #para {
     color: red;
     font-size: 15px;
+}
+
+.edit{
+    float: right;
+    cursor: pointer;
 }
