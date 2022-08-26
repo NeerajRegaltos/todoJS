@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <div>
+            <h1><a href="./index.html" id="head">My Todo App</a></h1>
+        </div>
+        <div>
+            <a id="logout">Logout</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="smallContainer">
+            <div class="smallGrid">
+                <div>
+                    <h3 id="day"></h3>
+                    <h3 id="fullDate"></h3>
+                </div>
+                <div id="username">
+                </div>
+            </div>
+
+
+
+            <p id="para"></p>
+            <form>
+                <input type="text" id="input" placeholder="Your Todo" autocomplete="off" autofocus>
+                <button type="submit" id="addBtn">+</button>
+            </form>
+
+            <p> You have<span id="num">0</span>pending items</p>
+
+            <ul id="list">
+
+            </ul>
+
+        </div>
+    </div>
+
+    <script src="./src/jsFiles/date.js"></script>
+    <script src="./src/jsFiles/main.js"></script>
+</body>
+
+</html>
