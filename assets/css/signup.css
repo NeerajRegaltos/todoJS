@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .container {
@@ -41,7 +42,7 @@ input {
     height: 50px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
@@ -60,7 +61,7 @@ a{
     color: white;
     font-size: 16px;
     border-radius: 8px;
-margin-left: 80px;
+    margin-left: 80px;
 }
 
 #or {
@@ -68,12 +69,35 @@ margin-left: 80px;
     margin-top: 20px;
 }
 
-#head{
+#head {
     border: 1px solid red;
     padding: 5px;
     background-color: black;
 }
 
-#head a{
+#head a {
     color: white;
+}
+
+@media screen and (max-width : 519px) {
+
+    #btn {
+        width: 20rem;
+    }
+
+
+    input {
+        width: 20rem;
+    }
+
+    #lastBtn {
+        margin-left: 20px;
+    }
+
+    #or {
+        margin-left: 170px;
+        margin-top: 20px;
+    }
+
+    
 }
