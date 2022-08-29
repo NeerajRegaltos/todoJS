@@ -67,7 +67,7 @@ function trashCan(clickedId) {
 //Edit
 function editMe(clickedId) {
     let t = document.getElementById(clickedId).parentElement.innerText;
-    document.getElementById(clickedId).parentElement.innerHTML = `<input type='text' value='${t}' id=${clickedId} autocomplete="off"> <i id="cancel" class="fa-solid fa-xmark"></i>`;
+    document.getElementById(clickedId).parentElement.innerHTML = `<input type='text' value='${t}' id=${clickedId} autocomplete="off"> <i id="cancel" class="fa-solid fa-check"></i>`;
 
     document.getElementById("cancel").addEventListener("click", function () {
         list.innerHTML = "";
