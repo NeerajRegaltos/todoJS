@@ -21,7 +21,7 @@ btn.addEventListener("click", (e) => {
                 para.innerText = "Password is Incorrect";
             } else {
                 sessionStorage.setItem("LogIn", true);
-                sessionStorage.setItem("email", inp1.value.trim());
+                sessionStorage.setItem("email", inp1.value.trim().toLowerCase());
                 window.location = "./main.html";
             }
         }
