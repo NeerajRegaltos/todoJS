@@ -90,7 +90,8 @@ function editMe(clickedId) {
 
 
 //rendering Username
-const username = userDetail.username;
+const username = userDetail.username.substring(0,21);
+
 document.getElementById("username").innerText = username;
 
 //Logout
