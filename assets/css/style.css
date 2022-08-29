@@ -122,12 +122,14 @@ a {
     border: 1px solid red;
     background-color: black;
     padding: 5px;
-    
+
 }
-.grid div a{
+
+.grid div a {
     cursor: pointer;
-} 
-#username{
+}
+
+#username {
     color: white;
     margin-top: 15px;
     margin-right: 25px;
@@ -135,8 +137,29 @@ a {
     margin: auto;
 }
 
-.smallGrid{
+.smallGrid {
     display: grid;
     grid-template-columns: 2fr 3fr;
     background-color: black;
+}
+
+@media screen and (max-width :614px) {
+    body {
+        width: max-content;
+    }
+
+    .container {
+        width: 500px;
+        margin-top: 80px;
+    }
+
+    #head {
+        font-size: 30px;
+    }
+
+    #logout {
+        font-size: 20px;
+
+    }
+
 }
