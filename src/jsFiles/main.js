@@ -67,8 +67,12 @@ function trashCan(clickedId) {
 //Edit
 function editMe(clickedId) {
     let t = document.getElementById(clickedId).parentElement.innerText;
-    document.getElementById(clickedId).parentElement.innerHTML = `<input type='text' value='${t}' id=${clickedId} autocomplete="off">`;
+    document.getElementById(clickedId).parentElement.innerHTML = `<input type='text' value='${t}' id=${clickedId} autocomplete="off"> <i id="cancel" class="fa-solid fa-xmark"></i>`;
 
+    document.getElementById("cancel").addEventListener("click", function () {
+        list.innerHTML = "";
+        displayTodoItems(arr);
+    })
 
     document.getElementById(clickedId).addEventListener("change", function () {
         if (document.getElementById(clickedId).value.trim().length !== 0) {
@@ -88,9 +92,8 @@ function editMe(clickedId) {
 
 
 
-
 //rendering Username
-const username = userDetail.username.substring(0,21);
+const username = userDetail.username.substring(0, 21);
 
 document.getElementById("username").innerText = username;
 
