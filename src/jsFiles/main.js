@@ -101,5 +101,5 @@ document.getElementById("username").innerText = username;
 let logout = document.getElementById("logout");
 logout.addEventListener("click", function () {
     sessionStorage.setItem("LogIn", false);
-    window.location = "./index.html";
+    window.location = "./login.html";
 });
